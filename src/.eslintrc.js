@@ -6,7 +6,7 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.js'],
+    project: ['./tsconfig.eslint.js'],
     sourceType: 'module',
     tsconfigRootDir: __dirname,
     ecmaFeatures: { jsx: true },
@@ -26,14 +26,14 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    curly: ['error', 'all'],
+    // 使われていない変数にエラーを出す
+    '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-use-before-define': ['error'],
     'react/function-component-definition': [
       2,
       { namedComponents: 'arrow-function' },
     ],
     'arrow-body-style': ['error', 'never'],
-    curly: ['error', 'all'],
-    // 使われていない変数にエラーを出す
-    '@typescript-eslint/no-unused-vars': 'error',
   },
 };
