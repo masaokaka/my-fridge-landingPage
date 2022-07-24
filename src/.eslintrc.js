@@ -6,7 +6,7 @@ module.exports = {
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.eslint.js'],
+    project: ['./tsconfig.eslint.json'],
     sourceType: 'module',
     tsconfigRootDir: __dirname,
     ecmaFeatures: { jsx: true },
@@ -29,11 +29,14 @@ module.exports = {
     curly: ['error', 'all'],
     // 使われていない変数にエラーを出す
     '@typescript-eslint/no-unused-vars': 'error',
+    // 変数などを宣言する前に記述するとエラーを出す
     '@typescript-eslint/no-use-before-define': ['error'],
+    // 関数コンポーネント宣言時にアロー関数の形以外はエラーを出す
     'react/function-component-definition': [
       2,
       { namedComponents: 'arrow-function' },
     ],
-    'arrow-body-style': ['error', 'never'],
+    // propsのスプレッド構文での展開を許可する
+    'react/jsx-props-no-spreading': 'off',
   },
 };
