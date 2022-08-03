@@ -38,7 +38,5 @@ module.exports = {
     ],
     // propsのスプレッド構文での展開を許可する
     'react/jsx-props-no-spreading': 'off',
-    // デフォルトエクスポート縛りをオフにする
-    'import/prefer-default-export': 'off',
   },
 };

@@ -13,11 +13,10 @@ const Top: NextPage = () => (
     </Head>
 
     <main className={styles.main}>
-      <h1 className={styles.title}>
-        <Link href="/about" passHref>
-          <button type="button">To About Page</button>
-        </Link>
-      </h1>
+      <h1 className={styles.title}>MyFridge</h1>
+      <Link href="/about" passHref>
+        <button type="button">サービスについて</button>
+      </Link>
 
       <p className={styles.description}>
         Get started by editing{' '}

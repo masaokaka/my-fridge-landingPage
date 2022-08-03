@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import About from './presenter';
+import About from '.';
 import '@testing-library/jest-dom';
 
 describe('aboutページの描画をテスト', () => {
