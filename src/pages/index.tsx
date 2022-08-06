@@ -13,7 +13,7 @@ const Top: NextPage = () => (
     <Layout>
       <main>
         <Link href="/about" passHref>
-          <button type="button">サービスについて</button>
+          <button type="button">サービスについてだよ</button>
         </Link>
       </main>
     </Layout>
