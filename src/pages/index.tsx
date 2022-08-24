@@ -17,13 +17,11 @@ const Top: NextPage = () => (
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Layout>
-      <main>
-        <Link href="/about" passHref>
-          <button type="button">サービスについて</button>
-        </Link>
-      </main>
-    </Layout>
+    <main>
+      <Link href="/about" passHref>
+        <button type="button">サービスについて</button>
+      </Link>
+    </main>
   </div>
 );
 
