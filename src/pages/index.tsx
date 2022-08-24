@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 const Top: NextPage = () => (
-  <div>
+  <>
     <Head>
       <title key="title">
         冷蔵庫にある食品を簡単に管理できるアプリ！ | MyFridge
@@ -22,7 +22,7 @@ const Top: NextPage = () => (
         <button type="button">サービスについて</button>
       </Link>
     </main>
-  </div>
+  </>
 );
 
 export default Top;
