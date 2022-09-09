@@ -16,7 +16,7 @@ const Button = ({ children, id, className, type, icon, onClick }: ButtonProps): 
   /* eslint-disable react/button-has-type */
   <button
     id={id}
-    className={`${className || ''} w-40 h-11 bg-green-main rounded-3xl text-orange-main flex justify-center items-center`}
+    className={`${className || ''} w-40 h-[50px] bg-green-main rounded-3xl text-orange-main flex justify-center items-center`}
     onClick={onClick}
     type={type}
   >
