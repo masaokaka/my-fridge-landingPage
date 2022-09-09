@@ -8,7 +8,11 @@ module.exports = {
     extend: {
       colors: {
         orange: {
-          150: '#FFFBED', // メインカラー
+          main: '#FFFBED', // メインカラー
+          sub: '#EF7D3C',
+        },
+        green: {
+          main: '#9CBB1C',
         },
       },
     },

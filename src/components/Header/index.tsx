@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from '../uiParts/Button';
 
 /**
  * ヘッダー部分
@@ -10,12 +11,13 @@ const Header = (): JSX.Element => (
     <Link href="/">
       <Image src="/logo.svg" alt="MyFridge Logo" width={80} height={80} />
     </Link>
-    <div className='flex'>
+    <div className='flex items-center'>
+      {/* TODO: aboutページの時は非表示にする */}
       <Link href="/about" passHref>
         <div className='text-base text-orange-150'>サービスについて</div>
       </Link>
-      <div className='ml-5 text-orange-150'>ログイン</div>
-      <div className='ml-5 text-orange-150'>新規登録</div>
+      <Button className='ml-5' icon='/login.svg'>ログイン</Button>
+      <Button className='ml-5 bg-orange-sub' icon='/create.svg'>新規登録</Button>
     </div>
   </header>
 );
