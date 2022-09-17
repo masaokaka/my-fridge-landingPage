@@ -14,7 +14,7 @@ const Header = (): JSX.Element => {
   return (
     <header className='py-2 px-2 sm:px-[32px] flex justify-between items-center flex-wrap'>
       <Link href="/">
-        <Image src="/logo.svg" alt="MyFridge Logo" width={80} height={80} />
+        <Image className='cursor-pointer' src="/logo.svg" alt="MyFridge Logo" width={80} height={80} />
       </Link>
       <div className='flex items-center flex-wrap'>
         {!isAboutPage && (
