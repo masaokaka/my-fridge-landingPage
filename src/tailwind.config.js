@@ -7,12 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        orange: {
-          main: '#FFFBED', // メインカラー
-          sub: '#EF7D3C',
-        },
-        green: {
+        custom: {
           main: '#9CBB1C',
+          base: '#FFFBED',
+          accent: '#EF7D3C',
         },
       },
     },
