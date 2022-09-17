@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 
 const Top: NextPage = () => (
   <>
@@ -17,11 +16,7 @@ const Top: NextPage = () => (
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main>
-      <Link href="/about" passHref>
-        <button type="button">サービスについて</button>
-      </Link>
-    </main>
+    <main />
   </>
 );
 
