@@ -4,7 +4,9 @@ import Footer from '../Footer';
 const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => (
   <>
     <Header />
-    {children}
+    <main>
+      {children}
+    </main>
     <Footer />
   </>
 );
