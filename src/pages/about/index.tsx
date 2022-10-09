@@ -13,7 +13,45 @@ const About: NextPage = () => (
       />
     </Head>
     <main>
-      <h1>このサイトについて</h1>
+      {/* タイトル */}
+      <h1
+        className='py-2 px-2 sm:px-[32px] sm:text-5xl text-3xl text-center sm:text-left text-custom-black font-bold'
+      >
+        サービスについて
+      </h1>
+      
+      <div className='sm:flex'>
+        {/* 文章側 */}
+        <div className='w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
+          <div className='text-white text-center text-3xl font-bold pt-8'>こんな時ありませんか？</div>
+          <div className='px-20 text-white text-center text-3xl pt-8'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
+        </div>
+
+        {/* 画像側 */}
+        <div>画像側</div>
+      </div>
+
+      <div className='sm:flex'>
+        {/* 画像側 */}
+        <div>画像側</div>
+        
+        {/* 文章側 */}
+        <div className='w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
+          <div className='text-white text-center text-3xl font-bold pt-8'>こんな時ありませんか？</div>
+          <div className='px-20 text-white text-center text-3xl pt-8'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
+        </div>
+      </div>
+      <div className='sm:flex'>
+        {/* 文章側 */}
+        <div className='w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
+          <div className='text-white text-center text-3xl font-bold pt-8'>こんな時ありませんか？</div>
+          <div className='px-20 text-white text-center text-3xl pt-8'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
+        </div>
+
+        {/* 画像側 */}
+        <div>画像側</div>
+      </div>
+
       <Link href="/">
         <p>トップページに戻る</p>
       </Link>
