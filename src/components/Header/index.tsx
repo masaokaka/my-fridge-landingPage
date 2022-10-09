@@ -19,7 +19,7 @@ const Header = (): JSX.Element => {
       <div className='flex items-center flex-wrap'>
         {!isAboutPage && (
           <Link href="/about" passHref>
-            <div className='mr-[16px] text-sm sm:text-base text-custom-base cursor-pointer'>サービスについて</div>
+            <div className='mr-[16px] text-sm sm:text-base text-black cursor-pointer'>サービスについて</div>
           </Link>
         )}
         <Button className='mr-[16px] my-2 text-sm sm:text-base' icon='/login.svg'>ログイン</Button>
