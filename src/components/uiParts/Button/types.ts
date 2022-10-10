@@ -13,4 +13,6 @@ export type ButtonProps = {
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void | Promise<void>;
+  /** 遷移したいリンク */
+  link?: string;
 };

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Image from 'next/image';
+import Router from 'next/router';
 import { ButtonProps } from './types';
 
 /**
@@ -19,20 +20,31 @@ const Button = ({
   type,
   icon,
   onClick,
-}: ButtonProps): JSX.Element => (
-  /* eslint-disable react/button-has-type */
-  <button
-    id={id}
-    className={`${
-      className || ''
-    } flex h-[40px] w-[120px] items-center justify-center rounded-3xl bg-custom-main font-semibold text-custom-base sm:h-[50px] sm:w-[160px]`}
-    onClick={onClick}
-    type={type}
-  >
-    {icon && <Image src={icon} alt='icon' width={26} height={26} />}
-    <span className='ml-2'>{children}</span>
-  </button>
-);
+  link,
+}: ButtonProps): JSX.Element => {
+  /** ページ遷移用関数 */
+  const movePage = useCallback(async (pageLink: string) => {
+    try {
+      await Router.push(pageLink);
+    } catch {
+      console.log('繊維に失敗しました');
+    }
+  }, []);
+  return (
+    /* eslint-disable react/button-has-type */
+    <button
+      id={id}
+      className={`${
+        className || ''
+      } flex h-[40px] w-[120px] items-center justify-center rounded-3xl bg-custom-main font-semibold text-custom-base sm:h-[50px] sm:w-[160px]`}
+      onClick={link ? () => movePage(link) : onClick}
+      type={type}
+    >
+      {icon && <Image src={icon} alt='icon' width={26} height={26} />}
+      <span className='ml-2'>{children}</span>
+    </button>
+  );
+};
 
 Button.defaultProps = {
   id: '',
