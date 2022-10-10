@@ -1,8 +1,6 @@
 import type { NextPage } from 'next';
-import Router from 'next/router';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useCallback } from 'react';
 import Button from '../components/uiParts/Button';
 
 const Top: NextPage = () => (
