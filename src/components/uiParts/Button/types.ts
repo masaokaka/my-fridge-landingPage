@@ -6,9 +6,11 @@ export type ButtonProps = {
   /** 追加クラス */
   className?: string;
   /** buttonタイプ */
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
   /** icon-src */
   icon?: string;
   /** onClick時の処理 */
-  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-}; 
+  onClick?: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => void | Promise<void>;
+};

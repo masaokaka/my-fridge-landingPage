@@ -16,7 +16,7 @@ const Header = (): JSX.Element => {
       <Link href='/'>
         <Image
           className='cursor-pointer'
-          src='/logo.svg'
+          src='/icons/logo.svg'
           alt='MyFridge Logo'
           width={80}
           height={80}
@@ -32,7 +32,7 @@ const Header = (): JSX.Element => {
         )}
         <Button
           className='my-2 mr-[16px] text-sm sm:text-base'
-          icon='/login.svg'
+          icon='/icons/login.svg'
         >
           ログイン
         </Button>
@@ -40,7 +40,7 @@ const Header = (): JSX.Element => {
           className={`${
             isTopPage ? 'hidden' : 'block'
           } my-2 mr-[16px] bg-custom-accent text-sm sm:flex sm:text-base`}
-          icon='/create.svg'
+          icon='/icons/create.svg'
         >
           新規登録
         </Button>
