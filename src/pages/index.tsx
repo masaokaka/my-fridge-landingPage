@@ -55,14 +55,14 @@ const Top: NextPage = () => (
         className=' h-screen max-h-[1080px] min-h-[600px] w-screen px-3 sm:flex'
       >
         <div className='flex w-full flex-col items-center justify-center sm:basis-1/2'>
-          <h2 className='mb-[72px] text-3xl font-semibold'>
+          <h2 className='mb-[72px] text-center text-3xl font-semibold'>
             「冷蔵庫に何があったっけ？」
             <br />
             「食材買い忘れた、、」
             <br />
             「間違って同じ食材買っちゃった！」
           </h2>
-          <p className='mb-16 text-xl'>
+          <p className='mb-16 text-center text-xl'>
             こんな経験ありませんか？
             <br />
             MyFridgeを使えばいつでもどこでも簡単に
@@ -75,18 +75,23 @@ const Top: NextPage = () => (
           <div className='relative flex items-center justify-center'>
             <div className='absolute top-72'>
               <Image
-                src='/question.png'
+                src='/img/question.png'
                 alt='悩んでいる女性'
                 width={400}
                 height={400}
               />
             </div>
             <div className='absolute top-5 left-10'>
-              <Image src='/lettuse.png' alt='レタス' width={200} height={200} />
+              <Image
+                src='/img/lettuse.png'
+                alt='レタス'
+                width={200}
+                height={200}
+              />
             </div>
             <div className='absolute top-10'>
               <Image
-                src='/chineseLettuse.png'
+                src='/img/chineseLettuse.png'
                 alt='白菜'
                 width={200}
                 height={200}
@@ -101,10 +106,39 @@ const Top: NextPage = () => (
       {/* トップページ三段目 */}
       <div
         id='thirdSection'
-        className='h-screen max-h-[1080px] min-h-[600px] w-screen px-3 sm:flex'
+        className=' h-screen max-h-[1080px] min-h-[600px] w-screen px-3 sm:flex'
       >
-        <div className='w-full sm:basis-1/2'>画像</div>
-        <div className='w-full sm:basis-1/2'>説明文</div>
+        <div className='w-full sm:basis-1/2'>
+          <div className='relative flex items-center justify-center'>
+            <div className='absolute top-5 left-0'>
+              <Image
+                src='/img/flash.png'
+                alt='ひらめいた女性'
+                width={400}
+                height={400}
+              />
+            </div>
+            <div className='absolute top-72 right-0'>
+              <Image
+                src='/img/shopping.png'
+                alt='買い物中の女性'
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
+        <div className='flex w-full flex-col items-center justify-center sm:basis-1/2'>
+          <h2 className='mb-[72px] text-center text-3xl font-semibold'>
+            はじめてみる
+          </h2>
+          <p className='mb-16 text-center text-xl'>
+            登録は簡単、家族みんなで利用できます。
+            <br />
+            日々の買い出しで悩むことはもうありません、早速始めましょう！
+          </p>
+          <button type='button'>ボタン</button>
+        </div>
       </div>
     </main>
   </>
