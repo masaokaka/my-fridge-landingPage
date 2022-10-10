@@ -20,9 +20,10 @@ const About: NextPage = () => (
         サービスについて
       </h1>
       
+      {/* 1段目 */}
       <div className='sm:flex'>
         {/* 文章側 */}
-        <div className='w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
+        <div className='w-full sm:w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
           <div className='text-white text-center text-3xl font-bold pt-8'>こんな時ありませんか？</div>
           <div className='px-20 text-white text-center text-3xl pt-8'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
         </div>
@@ -31,19 +32,22 @@ const About: NextPage = () => (
         <div>画像側</div>
       </div>
 
-      <div className='sm:flex'>
+      {/* 2段目 */}
+      <div className='sm:flex sm:justify-end text-right'>
         {/* 画像側 */}
         <div>画像側</div>
         
         {/* 文章側 */}
-        <div className='w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
+        <div className='w-full sm:w-[60%] h-[40%] bg-custom-accent rounded-l-[100vh]'>
           <div className='text-white text-center text-3xl font-bold pt-8'>こんな時ありませんか？</div>
           <div className='px-20 text-white text-center text-3xl pt-8'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
         </div>
       </div>
+
+      {/* 3段目 */}
       <div className='sm:flex'>
         {/* 文章側 */}
-        <div className='w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
+        <div className='w-full sm:w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
           <div className='text-white text-center text-3xl font-bold pt-8'>こんな時ありませんか？</div>
           <div className='px-20 text-white text-center text-3xl pt-8'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</div>
         </div>
