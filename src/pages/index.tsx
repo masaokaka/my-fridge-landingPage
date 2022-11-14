@@ -28,7 +28,7 @@ const Top: NextPage = () => (
           className='h-full w-full blur-sm'
         />
         <div className='z-1 absolute flex h-full w-full items-center justify-center'>
-          <h1 className=' text-6xl font-semibold leading-snug text-white'>
+          <h1 className='text-6xl font-semibold leading-snug text-white'>
             毎日の買い出しに、
             <br />
             手のひらサイズの冷蔵庫

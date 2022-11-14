@@ -27,7 +27,7 @@ const Button = ({
     try {
       await Router.push(pageLink);
     } catch {
-      console.log('繊維に失敗しました');
+      console.log('遷移に失敗しました');
     }
   }, []);
   return (
