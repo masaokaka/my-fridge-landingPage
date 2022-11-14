@@ -23,13 +23,7 @@ const Button = ({
   link,
 }: ButtonProps): JSX.Element => {
   /** ページ遷移用関数 */
-  const movePage = useCallback(async (pageLink: string) => {
-    try {
-      await Router.push(pageLink);
-    } catch {
-      console.log('遷移に失敗しました');
-    }
-  }, []);
+  const movePage = useCallback((pageLink: string) => Router.push(pageLink), []);
   return (
     /* eslint-disable react/button-has-type */
     <button
