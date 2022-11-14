@@ -4,4 +4,4 @@
 
 ## コンテナ起動＋アタッチモード
 
-docker-compose run -it myfridge-landingpage sh
+docker compose run -it myfridge-landingpage sh
