@@ -12,20 +12,22 @@ const Header = (): JSX.Element => {
   const isTopPage = router.pathname === '/';
   const isAboutPage = router.pathname === '/about';
   return (
-    <header className='flex flex-wrap items-center justify-between py-2 px-2 sm:px-[32px]'>
-      <Link href='/'>
-        <Image
-          className='cursor-pointer'
-          src='/icons/logo.svg'
-          alt='MyFridge Logo'
-          width={80}
-          height={80}
-        />
-      </Link>
+    <header className='absolute z-10 flex w-full flex-wrap items-center justify-between py-2 px-2 sm:px-[32px]'>
+      <div className='rounded-lg bg-custom-base'>
+        <Link href='/'>
+          <Image
+            className='cursor-pointer'
+            src='/icons/logo.svg'
+            alt='MyFridge Logo'
+            width={80}
+            height={80}
+          />
+        </Link>
+      </div>
       <div className='flex flex-wrap items-center'>
         {!isAboutPage && (
           <Link href='/about' passHref>
-            <div className='mr-[16px] cursor-pointer text-sm text-custom-base sm:text-base'>
+            <div className=' mr-[16px] cursor-pointer text-lg font-bold text-custom-base'>
               サービスについて
             </div>
           </Link>
