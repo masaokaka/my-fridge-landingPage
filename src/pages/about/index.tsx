@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About: NextPage = () => (
   <>
@@ -194,6 +195,10 @@ const About: NextPage = () => (
           </div>
         </div>
       </div>
+
+      <Link href='/'>
+        <p>トップページに戻る</p>
+      </Link>
     </main>
   </>
 );
