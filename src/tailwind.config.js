@@ -11,6 +11,7 @@ module.exports = {
           main: '#9CBB1C',
           base: '#FFFBED',
           accent: '#EF7D3C',
+          black: '#3D3D3D',
         },
       },
     },
