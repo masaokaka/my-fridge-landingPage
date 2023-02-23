@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/uiParts/Button';
+import ScrollTopButton from '../components/uiParts/ScrollTopButton';
 
 const Top: NextPage = () => (
   <>
@@ -33,6 +34,7 @@ const Top: NextPage = () => (
           手のひらサイズの冷蔵庫
         </h1>
       </div>
+
       <div className='z-1 absolute bottom-5 flex w-full items-center justify-center'>
         <button
           className='text-center text-white transition-transform duration-500 ease-out hover:translate-y-3'
@@ -156,20 +158,8 @@ const Top: NextPage = () => (
         </Button>
       </div>
     </div>
-    <div className='mb-10 flex w-full items-center justify-center rounded-full'>
-      <button
-        className='h-12 w-12 rounded-full bg-custom-accent text-center text-white transition-transform duration-500 ease-out hover:translate-y-[-10px]'
-        type='button'
-        onClick={() => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
-        }}
-      >
-        <span className='material-icons text-5xl'>keyboard_arrow_up</span>
-      </button>
-    </div>
+
+    <ScrollTopButton />
   </>
 );
 

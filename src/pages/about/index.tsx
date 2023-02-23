@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import ScrollTopButton from '../../components/uiParts/ScrollTopButton';
 
 const About: NextPage = () => (
   <>
@@ -193,14 +194,7 @@ const About: NextPage = () => (
         </div>
       </div>
 
-      <div className='flex items-center justify-center mb-2'>
-        {/* eslint-disable react/button-has-type */}
-        <button onClick={() => window.scroll({ top: 0, behavior: 'smooth' })}>
-          <span className='material-symbols-outlined cursor-pointer text-5xl text-white bg-[#EF7D3C] rounded-[50%]'>
-            expand_less
-          </span>
-        </button>
-      </div>
+      <ScrollTopButton />
     </main>
   </>
 );
