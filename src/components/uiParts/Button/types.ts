@@ -11,7 +11,7 @@ export type ButtonProps = {
   icon?: string;
   /** onClick時の処理 */
   onClick?: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    event?: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void | Promise<void>;
   /** 遷移したいリンク */
   link?: string;
