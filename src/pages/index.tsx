@@ -29,7 +29,7 @@ const Top: NextPage = () => (
         />
         <div className='z-1 absolute flex h-full w-full items-center justify-center'>
           <h1 className='text-6xl font-semibold leading-snug text-white'>
-            毎日の買い出しに、
+            毎日のお買い物に、
             <br />
             手のひらサイズの冷蔵庫
           </h1>
@@ -74,8 +74,9 @@ const Top: NextPage = () => (
           </p>
           <Button
             icon='/icons/arrow_circle_right.svg'
-            className='my-2 mr-[16px] bg-custom-accent text-sm sm:flex sm:text-base'
+            className='my-2 mr-[16px] text-sm sm:flex sm:text-base'
             link='/about'
+            buttonColor='bg-custom-accent'
           >
             詳細はこちら
           </Button>
@@ -148,8 +149,9 @@ const Top: NextPage = () => (
           </p>
           <Button
             icon='/icons/create.svg'
-            className='my-2 mr-[16px] bg-custom-accent text-sm sm:flex sm:text-base'
+            className='my-2 mr-[16px] text-sm sm:flex sm:text-base'
             link='/'
+            buttonColor='bg-custom-accent'
           >
             新規登録
           </Button>
