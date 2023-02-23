@@ -193,12 +193,18 @@ const About: NextPage = () => (
         </div>
       </div>
 
-      <div className='flex items-center justify-center mb-2'>
-        {/* eslint-disable react/button-has-type */}
-        <button onClick={() => window.scroll({ top: 0, behavior: 'smooth' })}>
-          <span className='material-symbols-outlined cursor-pointer text-5xl text-white bg-[#EF7D3C] rounded-[50%]'>
-            expand_less
-          </span>
+      <div className='mb-10 flex w-full items-center justify-center rounded-full'>
+        <button
+          className='h-12 w-12 rounded-full bg-custom-accent text-center text-white transition-transform duration-500 ease-out hover:translate-y-[-10px]'
+          type='button'
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
+          }}
+        >
+          <span className='material-icons text-5xl'>keyboard_arrow_up</span>
         </button>
       </div>
     </main>
