@@ -9,17 +9,16 @@ import Button from '../uiParts/Button';
  */
 const Header = (): JSX.Element => {
   const router = useRouter();
-  const isTopPage = router.pathname === '/';
   const isAboutPage = router.pathname === '/about';
   return (
-    <header className='absolute z-10 flex w-full flex-wrap items-center justify-between py-2 px-2 sm:px-[32px]'>
-      <div className='rounded-lg bg-custom-base'>
-        <Link href='/'>
+    <header className='absolute z-10 flex w-full flex-wrap items-center justify-between bg-custom-base py-2 px-2 sm:px-[32px]'>
+      <div className='flex h-[90px] w-[110px] items-center rounded-lg align-middle'>
+        <Link href='/' className='flex items-center align-middle'>
           <Image
             className='cursor-pointer'
             src='/icons/logo.svg'
             alt='MyFridge Logo'
-            width={80}
+            width={100}
             height={80}
           />
         </Link>
@@ -27,7 +26,7 @@ const Header = (): JSX.Element => {
       <div className='flex flex-wrap items-center'>
         {!isAboutPage && (
           <Link href='/about' passHref>
-            <div className=' mr-[16px] cursor-pointer text-lg font-bold text-custom-base'>
+            <div className=' mr-[16px] cursor-pointer text-lg font-bold text-custom-black'>
               サービスについて
             </div>
           </Link>
@@ -39,10 +38,9 @@ const Header = (): JSX.Element => {
           ログイン
         </Button>
         <Button
-          className={`${
-            isTopPage ? 'hidden' : 'block'
-          } my-2 mr-[16px] bg-custom-accent text-sm sm:flex sm:text-base`}
+          className='my-2 text-sm sm:text-base'
           icon='/icons/create.svg'
+          buttonColor='bg-custom-accent'
         >
           新規登録
         </Button>

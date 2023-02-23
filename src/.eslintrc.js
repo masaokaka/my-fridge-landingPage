@@ -38,5 +38,7 @@ module.exports = {
     ],
     // propsのスプレッド構文での展開を許可する
     'react/jsx-props-no-spreading': 'off',
+    // メモ化など行った際、デバッグ表示用の名前を求められるリントをオフにする
+    'react/display-name': 'off',
   },
 };
