@@ -1,24 +1,21 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/uiParts/Button';
 import ScrollTopButton from '../components/uiParts/ScrollTopButton';
+import CustomHead from '../components/uiParts/CustomHead';
+import { headerHeightMobile, headerHeightPC } from '../const';
 
 const Top: NextPage = () => (
   <>
     {/* ヘッダ情報 */}
-    <Head>
-      <title key='title'>
-        冷蔵庫にある食品を簡単に管理できるアプリ！ | MyFridge
-      </title>
-      <meta
-        key='description'
-        name='description'
-        content='冷蔵庫にある食品を簡単に管理できるアプリです。登録も簡単！'
-      />
-    </Head>
+    <CustomHead
+      title='冷蔵庫にある食品を簡単に管理できるアプリ！'
+      description='冷蔵庫にある食品を簡単に管理できるアプリです。登録も簡単！'
+    />
     {/* トップページ内コンテンツ */}
-    <div className='relative h-screen max-h-[1080px] min-h-[600px] w-full'>
+    <div
+      className={`relative h-[calc(100vh-${headerHeightMobile}px)] max-h-[1080px] min-h-[600px] w-full sm:h-[calc(100vh-${headerHeightPC}px)]`}
+    >
       {/* トップページ一段目 */}
       <Image
         src='/img/topImage.svg'
@@ -27,12 +24,19 @@ const Top: NextPage = () => (
         objectFit='cover'
         className='h-full w-full blur-sm'
       />
-      <div className='z-1 absolute flex h-full w-full items-center justify-center'>
-        <h1 className='text-6xl font-semibold leading-snug text-white'>
+      <div className='z-1 absolute flex h-full w-full flex-col items-center justify-center'>
+        <h1 className='font-semibold leading-snug text-white md:text-6xl'>
           毎日のお買い物に、
           <br />
           手のひらサイズの冷蔵庫
         </h1>
+        <Button
+          className='my-2 mt-16 flex text-sm sm:hidden sm:text-base'
+          icon='/icons/create.svg'
+          buttonColor='bg-custom-accent'
+        >
+          新規登録
+        </Button>
       </div>
 
       <div className='z-1 absolute bottom-5 flex w-full items-center justify-center'>
@@ -56,10 +60,10 @@ const Top: NextPage = () => (
     {/* トップページ二段目 */}
     <div
       id='secondSection'
-      className=' h-screen max-h-[1080px] min-h-[600px] w-screen px-3 sm:flex'
+      className=' h-screen max-h-[1080px] min-h-[600px] w-screen px-3 md:flex'
     >
-      <div className='relative flex w-full flex-col items-center justify-center sm:basis-1/2'>
-        <h2 className='mb-[72px] text-center text-3xl font-semibold'>
+      <div className='relative flex w-full flex-col items-center justify-center md:basis-1/2'>
+        <h2 className='mb-[72px] text-center font-semibold md:text-3xl'>
           「冷蔵庫に何があったっけ？」
           <br />
           「食材買い忘れた、、」

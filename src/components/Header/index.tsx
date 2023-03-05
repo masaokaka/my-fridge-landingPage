@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../uiParts/Button';
+import { headerHeightMobile, headerHeightPC } from '../../const';
 
 /**
  * ヘッダー部分
@@ -11,8 +12,10 @@ const Header = (): JSX.Element => {
   const router = useRouter();
   const isAboutPage = router.pathname === '/about';
   return (
-    <header className='absolute z-10 flex w-full flex-wrap items-center justify-between bg-custom-base py-2 px-2 sm:px-[32px]'>
-      <div className='flex h-[90px] w-[110px] items-center rounded-lg align-middle'>
+    <header
+      className={`sticky top-0 z-50 flex h-[${headerHeightMobile}px] sm:h-[${headerHeightPC}px] w-full flex-wrap items-center justify-between bg-custom-base py-2 px-2`}
+    >
+      <div className='flex h-[50px] w-[70px] items-center rounded-lg align-middle md:h-[90px] md:w-[110px]'>
         <Link href='/' className='flex items-center align-middle'>
           <Image
             className='cursor-pointer'
@@ -26,7 +29,7 @@ const Header = (): JSX.Element => {
       <div className='flex flex-wrap items-center'>
         {!isAboutPage && (
           <Link href='/about' passHref>
-            <div className=' mr-[16px] cursor-pointer text-lg font-bold text-custom-black'>
+            <div className=' mr-[16px] cursor-pointer text-sm font-bold text-custom-black md:text-lg'>
               サービスについて
             </div>
           </Link>
@@ -38,7 +41,7 @@ const Header = (): JSX.Element => {
           ログイン
         </Button>
         <Button
-          className='my-2 text-sm sm:text-base'
+          className='my-2 hidden text-sm sm:flex sm:text-base'
           icon='/icons/create.svg'
           buttonColor='bg-custom-accent'
         >
