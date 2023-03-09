@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+// import Image from 'next/image';
 import ScrollTopButton from '../../components/uiParts/ScrollTopButton';
 
 const About: NextPage = () => (
@@ -20,22 +20,24 @@ const About: NextPage = () => (
       </h1>
 
       {/* 1段目 */}
-      <div className='sm:flex mb-16'>
+      <div className='max-h-[1080px] min-h-[200px] w-screen md:flex mb-16'>
         {/* 文章側 */}
-        <div className='w-full sm:w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
-          <div className='text-white text-center text-3xl font-bold pt-8'>
-            こんな時ありませんか？
-          </div>
-          <div className='px-28 text-white text-center text-3xl pt-16 pb-16'>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At
+        <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
+          <div>
+            <div className='text-white text-center font-bold text-3xl px-28 pt-10 pb-10'>
+              こんな時ありませんか？
+            </div>
+            <div className='text-white text-center text-3xl px-28 pb-10'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At
+            </div>
           </div>
         </div>
 
         {/* 画像側 */}
-        <div className='w-full sm:w-[40%] h-[40%]'>
-          <div className='relative flex items-center justify-center'>
+        <div className='w-full'>
+          {/* <div className='relative'>
             <div className='absolute top-40 left-10'>
               <Image
                 src='/img/lettuse.png'
@@ -52,7 +54,7 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-            <div className='absolute top--10 left-10 '>
+            <div className='absolute top-0 left-10 '>
               <Image
                 src='/img/lettuse.png'
                 alt='ミニトマト'
@@ -60,15 +62,15 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* 2段目 */}
-      <div className='sm:flex mt-36 mb-96 sm:justify-end text-right'>
+      <div className='max-h-[1080px] min-h-[200px] w-screen md:flex mt-36 mb-96 sm:justify-end text-right'>
         {/* 画像側 */}
-        <div className='w-full sm:w-[40%] h-[40%]'>
-          <div className='relative flex items-center justify-center'>
+        <div className='w-full'>
+          {/* <div className='relative flex items-center justify-center'>
             <div className='absolute top-[-80px] right-[50px]'>
               <Image
                 src='/img/lettuse.png'
@@ -133,39 +135,43 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* 文章側 */}
-        <div className='w-full sm:w-[60%] h-[40%] bg-custom-accent rounded-l-[100vh]'>
-          <div className='text-white text-center text-3xl font-bold pt-8'>
-            機能について
-          </div>
-          <div className='px-28 text-white text-center text-3xl pt-16 pb-16'>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At
+        <div className='w-full bg-custom-accent rounded-l-[150px] flex justify-center items-center'>
+          <div>
+            <div className='text-white text-center text-3xl font-bold px-28 pt-10 pb-10'>
+              機能について
+            </div>
+            <div className='text-white text-center text-3xl px-28 pb-10'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At
+            </div>
           </div>
         </div>
       </div>
 
       {/* 3段目 */}
-      <div className='sm:flex mb-28'>
+      <div className='max-h-[1080px] min-h-[200px] w-screen md:flex mb-28'>
         {/* 文章側 */}
-        <div className='w-full sm:w-[60%] h-[40%] bg-custom-accent rounded-r-[100vh]'>
-          <div className='text-white text-center text-3xl font-bold pt-8'>
-            開発者について
-          </div>
-          <div className='px-28 text-white text-center text-3xl pt-16 pb-16'>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At
+        <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
+          <div>
+            <div className='text-white text-center text-3xl font-bold px-28 pt-10 pb-10'>
+              開発者について
+            </div>
+            <div className='text-white text-center text-3xl px-28 pb-10'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At
+            </div>
           </div>
         </div>
 
         {/* 画像側 */}
-        <div className='w-full sm:w-[40%] h-[40%]'>
-          <div className='relative flex items-center justify-center'>
+        <div className='w-full'>
+          {/* <div className='relative flex items-center justify-center'>
             <div className='absolute top-[0px] left-[0px]'>
               <Image
                 src='/img/lettuse.png'
@@ -190,7 +196,7 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
