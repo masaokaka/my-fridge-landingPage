@@ -15,12 +15,12 @@ const About: NextPage = () => (
     </Head>
     <div className='pt-28'>
       {/* タイトル */}
-      <h1 className='mb-16 py-2 px-2 sm:px-[32px] sm:text-5xl text-3xl text-center sm:text-left text-custom-black font-bold'>
+      <h1 className='mb-16 py-2 px-2 md:px-[32px] md:text-5xl text-3xl text-left text-custom-black font-bold'>
         サービスについて
       </h1>
 
       {/* 1段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-screen md:flex mb-16'>
+      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-16'>
         {/* 文章側 */}
         <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
           <div>
@@ -67,7 +67,7 @@ const About: NextPage = () => (
       </div>
 
       {/* 2段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-screen md:flex mt-36 mb-96 sm:justify-end text-right'>
+      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mt-36 mb-96 sm:justify-end text-right'>
         {/* 画像側 */}
         <div className='w-full'>
           {/* <div className='relative flex items-center justify-center'>
@@ -154,7 +154,7 @@ const About: NextPage = () => (
       </div>
 
       {/* 3段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-screen md:flex mb-28'>
+      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-28'>
         {/* 文章側 */}
         <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
           <div>
