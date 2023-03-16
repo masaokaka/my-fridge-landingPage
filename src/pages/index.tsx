@@ -55,7 +55,10 @@ const Top: NextPage = () => (
       </div>
     </div>
     {/* トップページ二段目 */}
-    <div id='secondSection' className='max-h-[1080px] w-full px-3 md:flex'>
+    <div
+      id='secondSection'
+      className='max-h-[1080px] w-full px-3 sm:px-20 md:flex'
+    >
       <div className='relative flex w-full flex-col items-center justify-center md:basis-1/2'>
         <h2 className='mb-[72px] text-center font-semibold md:text-3xl'>
           「冷蔵庫に何があったっけ？」
@@ -115,7 +118,7 @@ const Top: NextPage = () => (
     {/* トップページ三段目 */}
     <div
       id='thirdSection'
-      className='h-screen max-h-[1080px] min-h-[600px] w-full px-3 sm:flex'
+      className='h-screen max-h-[1080px] min-h-[600px] w-full px-3 sm:flex sm:px-20'
     >
       <div className='w-full sm:basis-1/2'>
         <div className='relative flex items-center justify-center'>

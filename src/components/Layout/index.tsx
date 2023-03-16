@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => (
   <>
     <Header />
-    <main className='container mx-auto'>{children}</main>
+    <main>{children}</main>
     <Footer />
   </>
 );
