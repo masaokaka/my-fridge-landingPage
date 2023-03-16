@@ -2,7 +2,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../uiParts/Button';
-import { headerHeightMobile, headerHeightPC } from '../../const';
 
 /**
  * ヘッダー部分
@@ -12,9 +11,7 @@ const Header = (): JSX.Element => {
   const router = useRouter();
   const isAboutPage = router.pathname === '/about';
   return (
-    <header
-      className={`sticky top-0 z-50 flex h-[${headerHeightMobile}px] sm:h-[${headerHeightPC}px] w-full flex-wrap items-center justify-between bg-custom-base py-2 px-2`}
-    >
+    <header className='sticky top-0 z-50 flex h-[80px] w-full flex-wrap items-center justify-between bg-custom-base py-2 px-2 sm:h-[100px]'>
       <div className='flex h-[50px] w-[70px] items-center rounded-lg align-middle md:h-[90px] md:w-[110px]'>
         <Link href='/' className='flex items-center align-middle'>
           <Image
