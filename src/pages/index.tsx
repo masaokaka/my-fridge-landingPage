@@ -1,41 +1,42 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import Button from '../components/uiParts/Button';
 import ScrollTopButton from '../components/uiParts/ScrollTopButton';
+import CustomHead from '../components/uiParts/CustomHead';
 
 const Top: NextPage = () => (
   <>
     {/* ヘッダ情報 */}
-    <Head>
-      <title key='title'>
-        冷蔵庫にある食品を簡単に管理できるアプリ！ | MyFridge
-      </title>
-      <meta
-        key='description'
-        name='description'
-        content='冷蔵庫にある食品を簡単に管理できるアプリです。登録も簡単！'
-      />
-    </Head>
+    <CustomHead
+      title='冷蔵庫にある食品を簡単に管理できるアプリ！'
+      description='冷蔵庫にある食品を簡単に管理できるアプリです。登録も簡単！'
+    />
+    <Image
+      src='/img/topImage.svg'
+      alt='トップ画像'
+      layout='fill'
+      objectFit='cover'
+      className='blur-sm'
+    />
     {/* トップページ内コンテンツ */}
-    <div className='relative h-screen max-h-[1080px] min-h-[600px] w-full'>
-      {/* トップページ一段目 */}
-      <Image
-        src='/img/topImage.svg'
-        alt='トップ画像'
-        layout='fill'
-        objectFit='cover'
-        className='h-full w-full blur-sm'
-      />
-      <div className='z-1 absolute flex h-full w-full items-center justify-center'>
-        <h1 className='text-6xl font-semibold leading-snug text-white'>
+    {/* トップページ一段目 */}
+    <div className='relative h-[calc(100vh-80px)] w-full sm:h-[calc(100vh-100px)]'>
+      <div className='z-3 absolute flex h-full w-full flex-col items-center justify-center'>
+        <h1 className='font-semibold leading-snug text-white md:text-6xl'>
           毎日のお買い物に、
           <br />
           手のひらサイズの冷蔵庫
         </h1>
+        <Button
+          className='my-2 mt-16 flex text-sm sm:hidden sm:text-base'
+          icon='/icons/create.svg'
+          buttonColor='bg-custom-accent'
+        >
+          新規登録
+        </Button>
       </div>
 
-      <div className='z-1 absolute bottom-5 flex w-full items-center justify-center'>
+      <div className='z-3 absolute bottom-5 flex w-full items-center justify-center'>
         <button
           className='text-center text-white transition-transform duration-500 ease-out hover:translate-y-3'
           type='button'
@@ -56,10 +57,10 @@ const Top: NextPage = () => (
     {/* トップページ二段目 */}
     <div
       id='secondSection'
-      className=' h-screen max-h-[1080px] min-h-[600px] w-screen px-3 sm:flex'
+      className='max-h-[1080px] w-full px-3 sm:px-20 md:flex'
     >
-      <div className='relative flex w-full flex-col items-center justify-center sm:basis-1/2'>
-        <h2 className='mb-[72px] text-center text-3xl font-semibold'>
+      <div className='relative flex w-full flex-col items-center justify-center md:basis-1/2'>
+        <h2 className='mb-[72px] text-center font-semibold md:text-3xl'>
           「冷蔵庫に何があったっけ？」
           <br />
           「食材買い忘れた、、」
@@ -84,7 +85,7 @@ const Top: NextPage = () => (
       </div>
       <div className='w-full sm:basis-1/2'>
         <div className='relative flex items-center justify-center'>
-          <div className='absolute top-72'>
+          {/* <div className='absolute top-72'>
             <Image
               src='/img/question.png'
               alt='悩んでいる女性'
@@ -110,18 +111,18 @@ const Top: NextPage = () => (
           </div>
           <div className='absolute top-64 left-3'>
             <Image src='/carrot.png' alt='人参' width={200} height={200} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
     {/* トップページ三段目 */}
     <div
       id='thirdSection'
-      className=' h-screen max-h-[1080px] min-h-[600px] w-screen px-3 sm:flex'
+      className='h-screen max-h-[1080px] min-h-[600px] w-full px-3 sm:flex sm:px-20'
     >
       <div className='w-full sm:basis-1/2'>
         <div className='relative flex items-center justify-center'>
-          <div className='absolute top-5 left-0'>
+          {/* <div className='absolute top-5 left-0'>
             <Image
               src='/img/flash.png'
               alt='ひらめいた女性'
@@ -136,7 +137,7 @@ const Top: NextPage = () => (
               width={400}
               height={400}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='flex w-full flex-col items-center justify-center sm:basis-1/2'>
