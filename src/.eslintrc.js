@@ -26,6 +26,8 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    // デフォルトエクスポート推奨をオフ
+    'import/prefer-default-export': 'off',
     curly: ['error', 'all'],
     // 使われていない変数にエラーを出す
     '@typescript-eslint/no-unused-vars': 'error',
