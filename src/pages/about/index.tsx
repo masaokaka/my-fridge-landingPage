@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-// import Image from 'next/image';
+import Image from 'next/image';
 import ScrollTopButton from '../../components/uiParts/ScrollTopButton';
 
 const About: NextPage = () => (
@@ -37,16 +37,8 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full'>
-          {/* <div className='relative'>
-            <div className='absolute top-40 left-10'>
-              <Image
-                src='/img/lettuse.png'
-                alt='ハンバーガー'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-10 left-60'>
+          <div className='flex items-center justify-center'>
+            <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='レタス'
@@ -54,48 +46,16 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-            <div className='absolute top-0 left-10 '>
-              <Image
-                src='/img/lettuse.png'
-                alt='ミニトマト'
-                width={200}
-                height={200}
-              />
-            </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
       {/* 2段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mt-36 mb-96 sm:justify-end text-right'>
+      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-16 md:justify-end text-right'>
         {/* 画像側 */}
         <div className='w-full'>
-          {/* <div className='relative flex items-center justify-center'>
-            <div className='absolute top-[-80px] right-[50px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='餃子'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[30px] right-[250px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='レモン'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[150px] right-[80px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='パイナップル'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[250px] right-[300px]'>
+          <div className='flex items-center justify-center'>
+            <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='ナス'
@@ -103,39 +63,7 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-            <div className='absolute top-[350px] right-[0px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='ステーキ'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[500px] right-[-250px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='ラーメン'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[350px] right-[-600px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='ドリンク'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[500px] right-[-800px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='カレー'
-                width={200}
-                height={200}
-              />
-            </div>
-          </div> */}
+          </div>
         </div>
 
         {/* 文章側 */}
@@ -154,7 +82,7 @@ const About: NextPage = () => (
       </div>
 
       {/* 3段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-28'>
+      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-16'>
         {/* 文章側 */}
         <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
           <div>
@@ -171,8 +99,8 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full'>
-          {/* <div className='relative flex items-center justify-center'>
-            <div className='absolute top-[0px] left-[0px]'>
+          <div className='flex items-center justify-center'>
+            <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='ピーマン'
@@ -180,23 +108,7 @@ const About: NextPage = () => (
                 height={200}
               />
             </div>
-            <div className='absolute top-[150px] left-[250px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='ケーキ'
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className='absolute top-[250px] left-[-50px]'>
-              <Image
-                src='/img/lettuse.png'
-                alt='マグロ'
-                width={200}
-                height={200}
-              />
-            </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
