@@ -20,7 +20,7 @@ const About: NextPage = () => (
       </h1>
 
       {/* 1段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-16'>
+      <div className='w-full md:flex md:mb-16'>
         {/* 文章側 */}
         <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
           <div>
@@ -37,13 +37,13 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full'>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center h-full'>
             <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='レタス'
-                width={200}
-                height={200}
+                width={400}
+                height={400}
               />
             </div>
           </div>
@@ -51,23 +51,9 @@ const About: NextPage = () => (
       </div>
 
       {/* 2段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-16 md:justify-end text-right'>
-        {/* 画像側 */}
-        <div className='w-full'>
-          <div className='flex items-center justify-center'>
-            <div className=''>
-              <Image
-                src='/img/lettuse.png'
-                alt='ナス'
-                width={200}
-                height={200}
-              />
-            </div>
-          </div>
-        </div>
-
+      <div className='w-full md:flex md:mb-16 md:justify-end text-right'>
         {/* 文章側 */}
-        <div className='w-full bg-custom-accent rounded-l-[150px] flex justify-center items-center'>
+        <div className='w-full md:order-2 bg-custom-accent rounded-l-[150px] flex justify-center items-center'>
           <div>
             <div className='text-white text-center text-3xl font-bold px-28 pt-10 pb-10'>
               機能について
@@ -79,10 +65,24 @@ const About: NextPage = () => (
             </div>
           </div>
         </div>
+
+        {/* 画像側 */}
+        <div className='w-full md:order-1'>
+          <div className='flex items-center justify-center h-full'>
+            <div className=''>
+              <Image
+                src='/img/lettuse.png'
+                alt='ナス'
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* 3段目 */}
-      <div className='max-h-[1080px] min-h-[200px] w-full md:flex mb-16'>
+      <div className='w-full md:flex md:mb-16'>
         {/* 文章側 */}
         <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
           <div>
@@ -99,13 +99,13 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full'>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center h-full'>
             <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='ピーマン'
-                width={200}
-                height={200}
+                width={400}
+                height={400}
               />
             </div>
           </div>
