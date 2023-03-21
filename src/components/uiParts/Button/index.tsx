@@ -33,7 +33,7 @@ const Button: FC<ButtonProps> = memo(
       /* eslint-disable react/button-has-type */
       <button
         id={id}
-        className={`flex h-[40px] w-[120px] items-center justify-center rounded-3xl ${buttonColor} font-semibold text-custom-base sm:h-[50px] sm:w-[160px] ${
+        className={`flex h-[40px] w-[120px] items-center justify-center rounded-3xl text-sm sm:text-base ${buttonColor} font-semibold text-custom-base sm:h-[50px] sm:w-[160px] ${
           className || ''
         }`}
         onClick={link ? () => movePage(link) : onClick}
