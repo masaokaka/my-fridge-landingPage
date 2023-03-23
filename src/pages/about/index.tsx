@@ -71,8 +71,8 @@ const About: NextPage = () => (
           <div className='flex items-center justify-center h-full'>
             <div className=''>
               <Image
-                src='/img/lettuse.png'
-                alt='ナス'
+                src='/img/carrot.png'
+                alt='にんじん'
                 width={400}
                 height={400}
               />
@@ -102,8 +102,8 @@ const About: NextPage = () => (
           <div className='flex items-center justify-center h-full'>
             <div className=''>
               <Image
-                src='/img/lettuse.png'
-                alt='ピーマン'
+                src='/img/chineseLettuse.png'
+                alt='チャイニーズレタス'
                 width={400}
                 height={400}
               />
