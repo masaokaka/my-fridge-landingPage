@@ -17,6 +17,7 @@ const Top: NextPage = () => (
       layout='fill'
       objectFit='cover'
       className='blur-sm'
+      unoptimized
     />
     {/* トップページ内コンテンツ */}
     {/* トップページ一段目 */}
@@ -92,6 +93,7 @@ const Top: NextPage = () => (
           alt='悩んでいる女性'
           width={400}
           height={400}
+          unoptimized
         />
       </div>
     </div>
@@ -106,6 +108,7 @@ const Top: NextPage = () => (
           alt='ひらめいた女性'
           width={400}
           height={400}
+          unoptimized
         />
       </div>
       <div className='flex w-full flex-col items-center justify-center sm:basis-1/2'>

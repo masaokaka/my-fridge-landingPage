@@ -15,19 +15,19 @@ const About: NextPage = () => (
     </Head>
     <div className='pt-28'>
       {/* タイトル */}
-      <h1 className='mb-16 py-2 px-2 md:px-[32px] md:text-5xl text-3xl text-left text-custom-black font-bold'>
+      <h1 className='mb-16 py-2 px-2 text-left text-3xl font-bold text-custom-black md:px-[32px] md:text-5xl'>
         サービスについて
       </h1>
 
       {/* 1段目 */}
-      <div className='w-full md:flex md:mb-16'>
+      <div className='w-full md:mb-16 md:flex'>
         {/* 文章側 */}
-        <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
+        <div className='flex w-full items-center justify-center rounded-r-[150px] bg-custom-accent'>
           <div>
-            <div className='text-white text-center font-bold text-3xl px-28 pt-10 pb-10'>
+            <div className='px-28 pt-10 pb-10 text-center text-3xl font-bold text-white'>
               こんな時ありませんか？
             </div>
-            <div className='text-white text-center text-3xl px-28 pb-10'>
+            <div className='px-28 pb-10 text-center text-3xl text-white'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At
@@ -37,13 +37,14 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full'>
-          <div className='flex items-center justify-center h-full'>
+          <div className='flex h-full items-center justify-center'>
             <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='レタス'
                 width={400}
                 height={400}
+                unoptimized
               />
             </div>
           </div>
@@ -51,14 +52,14 @@ const About: NextPage = () => (
       </div>
 
       {/* 2段目 */}
-      <div className='w-full md:flex md:mb-16 md:justify-end text-right'>
+      <div className='w-full text-right md:mb-16 md:flex md:justify-end'>
         {/* 文章側 */}
-        <div className='w-full md:order-2 bg-custom-accent rounded-l-[150px] flex justify-center items-center'>
+        <div className='flex w-full items-center justify-center rounded-l-[150px] bg-custom-accent md:order-2'>
           <div>
-            <div className='text-white text-center text-3xl font-bold px-28 pt-10 pb-10'>
+            <div className='px-28 pt-10 pb-10 text-center text-3xl font-bold text-white'>
               機能について
             </div>
-            <div className='text-white text-center text-3xl px-28 pb-10'>
+            <div className='px-28 pb-10 text-center text-3xl text-white'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At
@@ -68,13 +69,14 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full md:order-1'>
-          <div className='flex items-center justify-center h-full'>
+          <div className='flex h-full items-center justify-center'>
             <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='ナス'
                 width={400}
                 height={400}
+                unoptimized
               />
             </div>
           </div>
@@ -82,14 +84,14 @@ const About: NextPage = () => (
       </div>
 
       {/* 3段目 */}
-      <div className='w-full md:flex md:mb-16'>
+      <div className='w-full md:mb-16 md:flex'>
         {/* 文章側 */}
-        <div className='w-full bg-custom-accent rounded-r-[150px] flex justify-center items-center'>
+        <div className='flex w-full items-center justify-center rounded-r-[150px] bg-custom-accent'>
           <div>
-            <div className='text-white text-center text-3xl font-bold px-28 pt-10 pb-10'>
+            <div className='px-28 pt-10 pb-10 text-center text-3xl font-bold text-white'>
               開発者について
             </div>
-            <div className='text-white text-center text-3xl px-28 pb-10'>
+            <div className='px-28 pb-10 text-center text-3xl text-white'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At
@@ -99,13 +101,14 @@ const About: NextPage = () => (
 
         {/* 画像側 */}
         <div className='w-full'>
-          <div className='flex items-center justify-center h-full'>
+          <div className='flex h-full items-center justify-center'>
             <div className=''>
               <Image
                 src='/img/lettuse.png'
                 alt='ピーマン'
                 width={400}
                 height={400}
+                unoptimized
               />
             </div>
           </div>

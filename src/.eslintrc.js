@@ -26,6 +26,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    '@next/next/no-img-element': 'off',
     // デフォルトエクスポート推奨をオフ
     'import/prefer-default-export': 'off',
     curly: ['error', 'all'],

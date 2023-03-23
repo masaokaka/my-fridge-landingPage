@@ -39,7 +39,9 @@ const Button: FC<ButtonProps> = memo(
         onClick={link ? () => movePage(link) : onClick}
         type={type}
       >
-        {icon && <Image src={icon} alt='icon' width={26} height={26} />}
+        {icon && (
+          <Image src={icon} alt='icon' width={26} height={26} unoptimized />
+        )}
         <span className='ml-2'>{children}</span>
       </button>
     );
