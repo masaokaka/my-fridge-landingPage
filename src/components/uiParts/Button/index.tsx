@@ -1,5 +1,4 @@
 import React, { useCallback, memo, FC } from 'react';
-import Image from 'next/image';
 import Router from 'next/router';
 import { ButtonProps } from './types';
 
@@ -39,9 +38,7 @@ const Button: FC<ButtonProps> = memo(
         onClick={link ? () => movePage(link) : onClick}
         type={type}
       >
-        {icon && (
-          <Image src={icon} alt='icon' width={26} height={26} unoptimized />
-        )}
+        {icon && <img src={icon} alt='icon' width={26} height={26} />}
         <span className='ml-2'>{children}</span>
       </button>
     );
