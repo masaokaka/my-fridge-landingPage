@@ -27,10 +27,12 @@ const About: NextPage = () => (
             <div className='px-28 pt-10 pb-10 text-center text-3xl font-bold text-white'>
               こんな時ありませんか？
             </div>
-            <div className='px-28 pb-10 text-center text-3xl text-white'>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At
+            <div className='px-28 pb-10 text-left text-3xl text-white'>
+              冷蔵庫に何があるか把握できていない！
+              <br />
+              冷蔵庫の余っている食材を使いたい！
+              <br />
+              冷蔵庫の整理整頓ができていない！
             </div>
           </div>
         </div>
@@ -59,10 +61,12 @@ const About: NextPage = () => (
             <div className='px-28 pt-10 pb-10 text-center text-3xl font-bold text-white'>
               機能について
             </div>
-            <div className='px-28 pb-10 text-center text-3xl text-white'>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At
+            <div className='px-28 pb-10 text-left text-3xl text-white'>
+              ・冷蔵庫内の管理：食材や飲み物の名前、数量、消費期限などを入力し、冷蔵庫内の在庫を管理できます。
+              <br />
+              ・賞味期限アラート機能：設定した賞味期限が近づくと、通知が送られるので、食材の無駄を防止できます。
+              <br />
+              ・家族と共有可能：家族全員が同じアプリを使用すれば、家族で共有している冷蔵庫の在庫を共有できます。
             </div>
           </div>
         </div>
@@ -72,8 +76,8 @@ const About: NextPage = () => (
           <div className='flex h-full items-center justify-center'>
             <div className=''>
               <Image
-                src='/img/lettuse.png'
-                alt='ナス'
+                src='/img/carrot.png'
+                alt='にんじん'
                 width={400}
                 height={400}
                 unoptimized
@@ -91,10 +95,10 @@ const About: NextPage = () => (
             <div className='px-28 pt-10 pb-10 text-center text-3xl font-bold text-white'>
               開発者について
             </div>
-            <div className='px-28 pb-10 text-center text-3xl text-white'>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At
+            <div className='px-28 pb-10 text-left text-3xl text-white'>
+              MM(フロントエンド/バックエンド)
+              <br />
+              DK(フロントエンド/バックエンド)
             </div>
           </div>
         </div>
@@ -104,8 +108,8 @@ const About: NextPage = () => (
           <div className='flex h-full items-center justify-center'>
             <div className=''>
               <Image
-                src='/img/lettuse.png'
-                alt='ピーマン'
+                src='/img/chineseLettuse.png'
+                alt='チャイニーズレタス'
                 width={400}
                 height={400}
                 unoptimized
