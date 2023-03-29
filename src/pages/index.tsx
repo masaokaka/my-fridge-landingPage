@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
 import Button from '../components/uiParts/Button';
 import ScrollTopButton from '../components/uiParts/ScrollTopButton';
 import CustomHead from '../components/uiParts/CustomHead';
@@ -11,16 +10,16 @@ const Top: NextPage = () => (
       title='冷蔵庫にある食品を簡単に管理できるアプリ！'
       description='冷蔵庫にある食品を簡単に管理できるアプリです。登録も簡単！'
     />
-    <Image
-      src='/img/topImage.svg'
-      alt='トップ画像'
-      layout='fill'
-      objectFit='cover'
-      className='blur-sm'
-    />
     {/* トップページ内コンテンツ */}
     {/* トップページ一段目 */}
     <div className='relative h-[calc(100vh-80px)] w-full sm:h-[calc(100vh-100px)]'>
+      <div className='z-2 absolute'>
+        <img
+          src='/img/topImage.svg'
+          alt='トップ画像'
+          className='h-[calc(100vh-80px)] object-cover blur-sm sm:h-[calc(100vh-100px)]'
+        />
+      </div>
       <div className='z-3 absolute flex h-full w-full flex-col items-center justify-center'>
         <h1 className='font-semibold leading-snug text-white md:text-6xl'>
           毎日のお買い物に、
@@ -35,6 +34,7 @@ const Top: NextPage = () => (
           新規登録
         </Button>
       </div>
+
       <div className='z-3 absolute bottom-5 flex w-full items-center justify-center'>
         <button
           className='text-center text-white transition-transform duration-500 ease-out hover:translate-y-3'
@@ -87,11 +87,10 @@ const Top: NextPage = () => (
         </Button>
       </div>
       <div className='my-auto hidden text-center md:block md:w-[50%]'>
-        <Image
+        <img
           src='/img/question.png'
           alt='悩んでいる女性'
-          width={400}
-          height={400}
+          className='h-[400px] w-[400px]'
         />
       </div>
     </div>
@@ -101,11 +100,10 @@ const Top: NextPage = () => (
       className='h-full w-full py-10 px-3 sm:px-20  md:flex'
     >
       <div className='my-auto hidden text-center md:block md:w-[50%]'>
-        <Image
+        <img
           src='/img/flash.png'
           alt='ひらめいた女性'
-          width={400}
-          height={400}
+          className='h-[400px] w-[400px]'
         />
       </div>
       <div className='flex w-full flex-col items-center justify-center sm:basis-1/2'>
